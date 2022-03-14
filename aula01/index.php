@@ -7,9 +7,15 @@
     <title>Document</title>
     
 </head>
-<body>
+<body> <!--na url para setar o valor recebido ecreve ?p=150-->
     <?php 
-        echo 'oi';
+        $preco = $_GET["p"];
+        echo "O preço recebido foi R$".number_format($preco, 2);
+        $preco -= $preco*10/100;
+        echo "<br/> E o novo preço com 10% de desconto sera R$ ".number_format($preco, 2);
+        
+
+
     ?>
 </body>
 </html>
