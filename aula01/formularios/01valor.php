@@ -8,8 +8,11 @@
 <body>
 <div>
     <?php
-        
+        $valor = $_GET["v"];
+        $rq = sqrt($valor);
+        echo "A raiz de $valor e igual a $rq";
     ?>
+    <a href="01exercicio.html">voltar</a>
 </div>
 </body>
 </html>
